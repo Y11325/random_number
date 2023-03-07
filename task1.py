@@ -7,15 +7,27 @@ Number Guessing Game
 Have the computer generate a random number from 1 to 100.  The players will try to guess the number, and the computer will tell them if they are too high or too low.  Play continues until they guess correctly at which point the computer tells them how many guesses it took.
 (2 points) 
 '''
+print("---Guess a number between 1 and 100---")
 import random
-def rand1(max):
-    for i in range(5):
-        x = random.randrange(max)
-        print(x, end=" ")
+x = random.randrange(100)
+print(x)
+n = int(input("\n\nEnter an integer: "))
 
-def rand2():
-    for i in range (1):
-        x = random.randint(1,100)
-        print(x, end=" ")
+if n == x:
+    print(f"\nYou guessed correctly with only one try!!!")
 
-rand2()
+while n != x:
+    print(f"\nWRONG! Keep guessing!\n")
+    if n > x:
+        print("The number you entered is too high, try to guess lower!")
+        n = int(input("\n\nEnter another integer: "))
+
+    elif n < x:
+        print("The number you entered is too low, try to guess higher!")
+        n = int(input("\n\nEnter another integer: "))
+
+    if n == x:
+        break
+
+print(30*"*")
+print("Finally correct!!!\nCongratulation!!!\n\n")
