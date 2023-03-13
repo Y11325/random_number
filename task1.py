@@ -10,14 +10,12 @@ Have the computer generate a random number from 1 to 100.  The players will try 
 print("---Guess a number between 1 and 100---")
 import random
 x = random.randrange(100)
-print(x)
 n = int(input("\n\nEnter an integer: "))
-
-if n == x:
-    print(f"\nYou guessed correctly with only one try!!!")
+attempts = 0
 
 while n != x:
     print(f"\nWRONG! Keep guessing!\n")
+    attempts += 1
     if n > x:
         print("The number you entered is too high, try to guess lower!")
         n = int(input("\n\nEnter another integer: "))
@@ -28,6 +26,6 @@ while n != x:
 
     if n == x:
         break
-
+print("\n\n")
 print(30*"*")
-print("Finally correct!!!\nCongratulation!!!\n\n")
+print(f"Correct!!!\nYou used {attempts} attempts!\nCongratulation!!!\n\n")
