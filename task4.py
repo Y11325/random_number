@@ -24,7 +24,7 @@ def playerRolls():
     return [a,b,c]
 
 def main():
-    names = ["Boo Radley", "Scout", "Atticus", "Aunty Alexandra", "Uncle Finch", "Miss Maudie Atkinson", "Jem", "Gregor Samsa", "Old Major", "Snowball", "Napoleon", "Squealer", "Jones", "Boxer", "Mollie", "Romeo", "Montague", "Juliet", "Capulet", "Mercutio", "Tybalt" "The Nurse", "Friar Laurence","Winston Smith", "Julia", "O'Brien", "Katherine", "Big Brother", "Goldstein", "Catherine", "Heathcliff", "Edgar Linton", "Little Cathy Linton", "Hareton Earnshaw", "Ellen Dean", "Ralph", "Piggy", "Jack", "Simon", "Samneric", "Percival Wemys Madison", "Lennie Small", "George Milton", "Slim", "Candy", "Curley", "Liesel Meminger", "Hans Hubermann", "Rosa Hubermann", "Rudy Steiner", "Max Vandenburg"]
+    names = ["Boo Radley", "Scout", "Atticus", "Aunty Alexandra", "Uncle Finch", "Miss Maudie Atkinson", "Jem", "Gregor Samsa", "Old Major", "Snowball", "Napoleon", "Squealer", "Jones", "Boxer", "Mollie", "Romeo Montague", "Juliet Capulet", "Mercutio", "Tybalt", "The Nurse", "Friar Laurence","Winston Smith", "Julia", "O'Brien", "Katherine", "Big Brother", "Goldstein", "Catherine", "Heathcliff", "Edgar Linton", "Little Cathy Linton", "Hareton Earnshaw", "Ellen Dean", "Ralph", "Piggy", "Jack", "Simon", "Samneric", "Percival Wemys Madison", "Lennie Small", "George Milton", "Slim", "Candy", "Curley", "Liesel Meminger", "Hans Hubermann", "Rosa Hubermann", "Rudy Steiner", "Max Vandenburg"]
 
     stats = ["strength", "intelligence", "wisdom", "dexterity", "constitution", "charisma"]
 

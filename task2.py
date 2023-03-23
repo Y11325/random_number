@@ -10,9 +10,8 @@ Toss a coin to determine what the coin will be, and then tell the player if they
 '''
 print("\n\n<<<---Heads or Tails--->>>")
 import random
-yes = 100
 
-while yes == 100:
+while True:
     coin = random.randint(0,1)
     print("\nCoin tossed...")
     print(100*"*")

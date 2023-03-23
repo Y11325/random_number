@@ -11,10 +11,9 @@ Play the classic "Rock Paper Scissors Lizard Spock" game
 https://www.youtube.com/watch?v=Z2Dwxv-EMTM
 '''
 import random
-a = 100
 
 def game1():
-    while a == 100:
+    while True:
         move = input("\nEnter rock, paper, or scissors (spelling counts): ")
         computer = random.randint(0,2)
 
@@ -55,7 +54,7 @@ def game1():
                 print(f"you: {move} beat computer: {computer}")
         
         print("\n")
-        again = input("Play again (enter y for yes or n for no): ")
+        again = input("Play again (enter y/n): ")
         if again == "y":
             continue
         elif again == "n":
@@ -63,7 +62,7 @@ def game1():
             break
 
 def game2():
-    while a == 100:
+    while True:
         move = input("\nEnter rock, paper, scissors, lizard, or spock (spelling counts): ")
         #Just found a simpler way of doing things :D
         stuff = ["rock", "paper", "scissors", "lizard", "spock"]
@@ -118,7 +117,7 @@ def game2():
                 print(f"\nYou lose!\nPaper disproves spock\ncomputer: {computer}\nyou: {move}")
                 print("\n")
                 
-        again = input("Play again (enter y for yes or n for no): ")
+        again = input("Play again (enter y/n): ")
         if again == "y":
             continue
         elif again == "n":
